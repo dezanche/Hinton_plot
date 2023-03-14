@@ -27,7 +27,7 @@ Default circles (`'o'`):\
 
 ### Correlation absolute value
 
-|Using square markers (`'s'`):|In a traditional display phase information is lost:|
+|Using square markers (`'s'`):|With `imagesc` only magnitude can be displayed:|
 :-------------------------:|:-------------------------:
 |![abs correlation](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_abs_Hinton.svg)|![abs correlation imagesc](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_abs_imagesc.png)|
 
