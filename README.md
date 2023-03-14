@@ -8,9 +8,9 @@ Similar functionality is available in R's [corrplot](https://cran.r-project.org/
 
 ## Examples
 ### Complex correlation
-![complex correlation]()
+![complex correlation](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_Hinton.svg)
 ### Correlation absolute value
-![abs correlation]()
+![abs correlation](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_abs_Hinton.svg)
 
 ## Contributors
 Nicola De Zanche.
