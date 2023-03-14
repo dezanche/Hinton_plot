@@ -2,7 +2,7 @@
 The function [Hinton_plot.m](https://github.com/dezanche/Hinton_plot/blob/main/Hinton_plot.m) works in Matlab or Octave to display a real or complex matrix using a Hinton diagram (original idea published [here](https://doi.org/10.1037/0033-295x.98.1.74)). At each position in the matrix the marker area is proportional to the absolute value of the matrix element, which allows a wide range of values to be displayed and readily interpreted. If the matrix is real and positive, the colour of all markers is the same. If not, the phase of each element modifies the colour of the corresponding marker.
 The advantages of Hinton diagrams over traditional color-mapped display (e.g., imagesc) are:
 - differences in magnitude of the matrix elements are more readily interpreted from the size of the markers as opposed to colour or grayscale differences
-- if complex, the phase is also visualized (as a colour), which is impossible with traditional display\
+- if complex, the phase is also visualized (as a colour), which is impossible with traditional display
 
 Examples are shown below for 8-dimensional noise correlation and covariance matrices which are often used in MR image reconstruction. 
 Similar functionality is available in R's [corrplot](https://cran.r-project.org/web/packages/corrplot/vignettes/corrplot-intro.html) and in Python's [matplotlib](https://matplotlib.org/stable/gallery/specialty_plots/hinton_demo.html).
@@ -24,6 +24,7 @@ Default circles (`'o'`)\
 ### Correlation absolute value
 Using square markers (`'s'`)\
 ![abs correlation](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_abs_Hinton.svg)
+In a traditional display the phase is not displayed.\
 ![abs correlation imagesc](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_abs_imagesc.png)
 ### Complex covariance
 Notice how differences in variance (along the diagonal) are readily identified.\
