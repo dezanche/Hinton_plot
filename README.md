@@ -14,8 +14,8 @@ Hinton_plot(A);
 Hinton_plot(A,marker);
 S = Hinton_plot(A,marker);
 ```
-where
-- `A` is the matrix to be displayed.\
+Where:
+- `A` is the matrix to be displayed.
 - `marker` (optional) specifies the marker type similarly to other graphical commands like [plot](https://octave.sourceforge.io/octave/function/plot.html). The default marker is a circle.
 
 The function returns a handle (`S`) to a scatter object.
