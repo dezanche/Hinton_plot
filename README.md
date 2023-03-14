@@ -24,14 +24,17 @@ The function returns a handle (`S`) to a scatter object.
 ### Complex correlation
 Default circles (`'o'`):\
 ![complex correlation](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_Hinton.svg)
+
 ### Correlation absolute value
-Using square markers (`'s'`):\
-![abs correlation](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_abs_Hinton.svg)\
-In a traditional display phase information is lost:\
-![abs correlation imagesc](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_abs_imagesc.png)
+
+|Using square markers (`'s'`):|In a traditional display phase information is lost:|
+:-------------------------:|:-------------------------:
+|![abs correlation](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_abs_Hinton.svg)|![abs correlation imagesc](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_abs_imagesc.png)|
+
 ### Complex covariance
 Notice how differences in variance (along the diagonal) are readily identified:\
 ![complex covariance](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/covariance_Hinton.svg)
+
 ### Covariance absolute value
 
 |Using diamonds (`'d'`):   |                          |
