@@ -14,18 +14,22 @@ Hinton_plot(A,marker)
 S = Hinton_plot(A,marker)
 ```
 where `A` is the matrix to be displayed.\
-`marker` (optional) specifies the marker type similarly to other graphical commands like [plot](https://octave.sourceforge.io/octave/function/plot.html).\
+`marker` (optional) specifies the marker type similarly to other graphical commands like [plot](https://octave.sourceforge.io/octave/function/plot.html). The default marker is a circle.\
 The function returns a handle (`S`) to a scatter object.
 
 ## Examples
 ### Complex correlation
+Default circles (`'o'`)
 ![complex correlation](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_Hinton.svg)
 ### Correlation absolute value
+Using square markers (`'s'`)
 ![abs correlation](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_abs_Hinton.svg)
 ![abs correlation imagesc](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_abs_imagesc.png)
 ### Complex covariance
+Notice how differences in variance (along the diagonal) are readily identified.
 ![complex covariance](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/covariance_Hinton.svg)
 ### Covariance absolute value
+Using diamonds (`'d'`)
 ![abs covariance](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/covariance_abs_Hinton.svg)
 ![abs covariance imagesc](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/covariance_abs_imagesc.png)
 
