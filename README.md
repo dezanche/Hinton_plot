@@ -3,16 +3,18 @@ The function [Hinton_plot.m](https://github.com/dezanche/Hinton_plot/blob/main/H
 The advantages of Hinton diagrams over traditional color-mapped display (e.g., imagesc) are:
 - differences in magnitude of the matrix elements are more readily interpreted from the size of the markers as opposed to colour or grayscale differences
 - if complex, the phase is also visualized (as a colour), which is impossible with traditional display\
+
 Examples are shown below for 8-dimensional noise correlation and covariance matrices which are often used in MR image reconstruction. 
 Similar functionality is available in R's [corrplot](https://cran.r-project.org/web/packages/corrplot/vignettes/corrplot-intro.html) and in Python's [matplotlib](https://matplotlib.org/stable/gallery/specialty_plots/hinton_demo.html).
 
 ## Usage
-```Hinton_plot(A)
+```
+Hinton_plot(A)
 Hinton_plot(A,marker)
 S = Hinton_plot(A,marker)
 ```
-where `A` is the matrix to be displayed.
-`marker` (optional) specifies the marker type similarly to other graphical commands like [plot](https://octave.sourceforge.io/octave/function/plot.html).
+where `A` is the matrix to be displayed.\
+`marker` (optional) specifies the marker type similarly to other graphical commands like [plot](https://octave.sourceforge.io/octave/function/plot.html).\
 The function returns a handle (`S`) to a scatter object.
 
 ## Examples
