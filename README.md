@@ -29,7 +29,7 @@ Default circles (`'o'`):\
 
 |Using square markers (`'s'`):|In a traditional display phase information is lost:|
 :-------------------------:|:-------------------------:
-|![abs correlation](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_abs_Hinton.svg)|![abs correlation imagesc](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_abs_imagesc.png | width=100)|
+|![abs correlation](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_abs_Hinton.svg)|![abs correlation imagesc](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_abs_imagesc.png)|
 
 ### Complex covariance
 Notice how differences in variance (along the diagonal) are readily identified:\
@@ -39,7 +39,7 @@ Notice how differences in variance (along the diagonal) are readily identified:\
 
 |Using diamonds (`'d'`):   |                          |
 :-------------------------:|:-------------------------:
-|![abs covariance](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/covariance_abs_Hinton.svg)|![abs covariance imagesc](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/covariance_abs_imagesc.png | width=100)|
+|![abs covariance](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/covariance_abs_Hinton.svg)|![abs covariance imagesc](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/covariance_abs_imagesc.png)|
 
 ## Contributors
 Nicola De Zanche
