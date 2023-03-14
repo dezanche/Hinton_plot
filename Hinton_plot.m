@@ -1,5 +1,5 @@
 % plot Hinton diagram of matrix values
-% usage: Hinton_plot(A,marker)
+% usage: S = Hinton_plot(A,marker)
 % where A is a matrix
 % specify marker type (optional) just like plot command
 % marker area is proportional to the absolute value of the matrix entry at that position
