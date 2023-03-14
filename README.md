@@ -27,7 +27,7 @@ Default circles (`'o'`):\
 ### Correlation absolute value
 Using square markers (`'s'`):\
 ![abs correlation](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_abs_Hinton.svg)\
-In a traditional display the phase is not displayed:\
+In a traditional display phase information is lost:\
 ![abs correlation imagesc](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_abs_imagesc.png)
 ### Complex covariance
 Notice how differences in variance (along the diagonal) are readily identified:\
