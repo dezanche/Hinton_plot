@@ -36,8 +36,7 @@ Notice how differences in variance (along the diagonal) are readily identified:\
 
 |Using diamonds (`'d'`):   |                          |
 :-------------------------:|:-------------------------:
-|![abs covariance](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/covariance_abs_Hinton.svg)|
-![abs covariance imagesc](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/covariance_abs_imagesc.png)|
+|![abs covariance](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/covariance_abs_Hinton.svg)|![abs covariance imagesc](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/covariance_abs_imagesc.png)|
 
 ## Contributors
 Nicola De Zanche
