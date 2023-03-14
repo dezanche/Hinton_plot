@@ -4,7 +4,7 @@ The advantages of Hinton diagrams over traditional color-mapped display (e.g., i
 - differences in magnitude of the matrix elements are more readily interpreted from the size of the markers as opposed to colour or grayscale differences
 - if complex, the phase is also visualized (as a colour), which is impossible with traditional display
 
-Examples are shown below for 8-dimensional noise correlation and covariance matrices which are often used in MR image reconstruction. 
+Examples are shown below for 8x8 noise correlation and covariance matrices which are often used in MR image reconstruction from coil arrays. 
 Similar functionality is available in R's [corrplot](https://cran.r-project.org/web/packages/corrplot/vignettes/corrplot-intro.html) and in Python's [matplotlib](https://matplotlib.org/stable/gallery/specialty_plots/hinton_demo.html).
 
 ## Usage
@@ -20,22 +20,22 @@ The function returns a handle (`S`) to a scatter object.
 ## Examples
 ### Complex correlation
 Default circles (`'o'`)\
-![complex correlation](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_Hinton.svg)
+![complex correlation](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_Hinton.svg)\
 ### Correlation absolute value
 Using square markers (`'s'`)\
-![abs correlation](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_abs_Hinton.svg)
+![abs correlation](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_abs_Hinton.svg)\
 In a traditional display the phase is not displayed.\
-![abs correlation imagesc](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_abs_imagesc.png)
+![abs correlation imagesc](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_abs_imagesc.png)\
 ### Complex covariance
 Notice how differences in variance (along the diagonal) are readily identified.\
-![complex covariance](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/covariance_Hinton.svg)
+![complex covariance](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/covariance_Hinton.svg)\
 ### Covariance absolute value
 Using diamonds (`'d'`)\
-![abs covariance](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/covariance_abs_Hinton.svg)
-![abs covariance imagesc](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/covariance_abs_imagesc.png)
+![abs covariance](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/covariance_abs_Hinton.svg)\
+![abs covariance imagesc](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/covariance_abs_imagesc.png)\
 
 ## Contributors
-Nicola De Zanche.
+Nicola De Zanche
 
 ## Licenses
 Software code is licensed under the terms of the [GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.en.html) as published by the Free Software Foundation, either version 3 of the License, or any later version.\
