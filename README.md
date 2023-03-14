@@ -1,10 +1,19 @@
 # Hinton_plot
-The function [Hinton_plot.m](https://github.com/dezanche/Hinton_plot/blob/main/Hinton_plot.m) works in Matlab or Octave to display a real or complex matrix using a Hinton diagram (original idea published [here](https://doi.org/10.1037/0033-295x.98.1.74)).
+The function [Hinton_plot.m](https://github.com/dezanche/Hinton_plot/blob/main/Hinton_plot.m) works in Matlab or Octave to display a real or complex matrix using a Hinton diagram (original idea published [here](https://doi.org/10.1037/0033-295x.98.1.74)), where marker area is proportional to the absolute value of the matrix element at that position. If the matrix is not real and positive, the phase of each element modifies the colour of the corresponding marker.
 The advantages of Hinton diagrams over traditional color-mapped display (e.g., imagesc) are:
 - differences in magnitude of the matrix elements are more readily interpreted from the size of the markers as opposed to colour or grayscale differences
 - if complex, the phase is also visualized (as a colour), which is impossible with traditional display\
 Examples are shown below for 8-dimensional noise correlation and covariance matrices which are often used in MR image reconstruction. 
 Similar functionality is available in R's [corrplot](https://cran.r-project.org/web/packages/corrplot/vignettes/corrplot-intro.html) and in Python's [matplotlib](https://matplotlib.org/stable/gallery/specialty_plots/hinton_demo.html).
+
+## Usage
+```Hinton_plot(A)
+Hinton_plot(A,marker)
+S = Hinton_plot(A,marker)
+```
+where `A` is the matrix to be displayed.
+`marker` (optional) specifies the marker type similarly to other graphical commands like [plot](https://octave.sourceforge.io/octave/function/plot.html).
+The function returns a handle (`S`) to a scatter object.
 
 ## Examples
 ### Complex correlation
@@ -12,9 +21,9 @@ Similar functionality is available in R's [corrplot](https://cran.r-project.org/
 ### Correlation absolute value
 ![abs correlation](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_abs_Hinton.svg)
 ![abs correlation imagesc](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_abs_imagesc.png)
-### Complex correlation
+### Complex covariance
 ![complex covariance](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/covariance_Hinton.svg)
-### Correlation absolute value
+### Covariance absolute value
 ![abs covariance](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/covariance_abs_Hinton.svg)
 ![abs covariance imagesc](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/covariance_abs_imagesc.png)
 
