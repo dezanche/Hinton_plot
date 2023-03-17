@@ -4,7 +4,7 @@ The advantages of Hinton diagrams over traditional colour-mapped display (e.g., 
 - differences in magnitude of the matrix elements are more readily interpreted from the size of the markers as opposed to colour or grayscale differences
 - if complex, the phase is also visualized (as a colour), which is impossible with traditional display
 
-Examples are shown below for 8x8 noise correlation and covariance matrices which are often used in MR image reconstruction from coil arrays. 
+Examples shown below include 8x8 noise correlation and covariance matrices which are often used in MR image reconstruction from coil arrays. 
 Similar functionality is available in R's [corrplot](https://cran.r-project.org/web/packages/corrplot/vignettes/corrplot-intro.html) and in Python's [matplotlib](https://matplotlib.org/stable/gallery/specialty_plots/hinton_demo.html).\
 I hope you find this useful.
 
@@ -21,15 +21,14 @@ Where:
 The function returns a handle (`S`) to a scatter object.
 
 ## Examples
+
+### 50x50 random matrix
 ```
 A=2*rand(50)-1;
 s=Hinton_plot(A,'s');
 set(s,'markeredgecolor','k')
 ```
-
-### Complex correlation
-Default circles (`'o'`):\
-![complex correlation](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_Hinton.svg)
+![50x50 random matrix](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/50x50_rand.svg)
 
 ### Correlation absolute value
 
@@ -38,7 +37,8 @@ Default circles (`'o'`):\
 |![abs correlation](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_abs_Hinton.svg)|![abs correlation imagesc](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_abs_imagesc.png)|
 
 ### Complex covariance
-Notice how differences in variance (along the diagonal) are readily identified:\
+Notice how differences in variance (along the diagonal) are readily identified and Hermitian symmetry is verified by looking at the phase colours.\
+Markers are default circles (`'o'`).\
 ![complex covariance](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/covariance_Hinton.svg)
 
 ### Covariance absolute value
