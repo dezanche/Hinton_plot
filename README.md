@@ -1,5 +1,5 @@
 # Hinton Diagram
-The function [Hinton_plot.m](https://github.com/dezanche/Hinton_plot/blob/main/Hinton_plot.m) works in Matlab or Octave to display a real or complex matrix using a Hinton diagram (original idea published [here](https://doi.org/10.1037/0033-295x.98.1.74)). At each position in the matrix the marker area is proportional to the absolute value of the matrix element, which allows a wide range of values to be displayed and readily interpreted. If the matrix is real and positive, the colour of all markers is the same. If not, the phase of each element modifies the colour of the corresponding marker.
+The function [Hinton_plot.m](https://github.com/dezanche/Hinton_plot/blob/main/Hinton_plot.m) works in [Matlab](https://www.mathworks.com/products/matlab.html) or [Octave](https://octave.org/) to display a real or complex matrix using a Hinton diagram (original idea published [here](https://doi.org/10.1037/0033-295x.98.1.74)). At each position in the matrix the marker area is proportional to the absolute value of the matrix element, which allows a wide range of values to be displayed and readily interpreted. If the matrix is real and positive, the colour of all markers is the same. If not, the phase of each element modifies the colour of the corresponding marker.
 The advantages of Hinton diagrams over traditional colour-mapped display (e.g., [imagesc](https://octave.sourceforge.io/octave/function/imagesc.html)) are:
 - differences in magnitude of the matrix elements are more readily interpreted from the size of the markers as opposed to colour or grayscale differences
 - if complex, the phase is also visualized (as a colour), which is impossible with traditional display
@@ -21,6 +21,12 @@ Where:
 The function returns a handle (`S`) to a scatter object.
 
 ## Examples
+```
+A=2*rand(50)-1;
+s=Hinton_plot(A,'s');
+set(s,'markeredgecolor','k')
+```
+
 ### Complex correlation
 Default circles (`'o'`):\
 ![complex correlation](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_Hinton.svg)
