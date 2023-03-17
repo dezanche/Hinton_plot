@@ -30,10 +30,6 @@ set(s,'markeredgecolor','k')
 ```
 ![50x50 random matrix](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/50x50_rand.svg)
 
-### Complex correlation
-Default circles (`'o'`):\
-![complex correlation](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_Hinton.svg)
-
 ### Correlation absolute value
 
 |Using square markers (`'s'`):|With `imagesc` only magnitude can be displayed:|
@@ -41,7 +37,8 @@ Default circles (`'o'`):\
 |![abs correlation](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_abs_Hinton.svg)|![abs correlation imagesc](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/correlation_abs_imagesc.png)|
 
 ### Complex covariance
-Notice how differences in variance (along the diagonal) are readily identified and Hermitian symmetry is verified by looking at the phase colours:\
+Notice how differences in variance (along the diagonal) are readily identified and Hermitian symmetry is verified by looking at the phase colours.\
+Markers are default circles (`'o'`).\
 ![complex covariance](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/covariance_Hinton.svg)
 
 ### Covariance absolute value
