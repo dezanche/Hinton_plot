@@ -26,10 +26,10 @@ function s = Hinton_plot(A,marker)
     marker = "o";
   end
   matsize= size(A);
-  scaling = 1500/max(max(abs(A)));   % to adjust marker size appropriate for correlation
-  % 1500 for circle, 2000 diamond, 1000 square
+  scaling = 5000/max(max(abs(A)))/max(matsize);   % to adjust marker size appropriate for display
+  % you'll have to play around with the constant to get the best appearance; it depends on the marker type, figure size, etc.
   H = gcf();                             % use current figure or create new one
-  set(H,'Name',['Hinton diagram: ' inputname(1)]);  % blank name if input is an expression
+  set(H,'Name',['Hinton diagram: ' inputname(1)]);  % variable name or blank if input is an expression
   [i,j]= meshgrid(1:matsize(1),1:matsize(2));
   if isreal(A)&&(A>=0)   % real and >ve elements
     s = scatter(i(:),j(:),scaling*abs(A(:)),"filled",marker);
