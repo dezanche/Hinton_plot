@@ -22,13 +22,16 @@ The function returns a handle (`S`) to a scatter object.
 
 ## Examples
 
-### 50x50 random matrix
+### 50x50 random matrix (real)
 ```
 A=2*rand(50)-1;
 s=Hinton_plot(A,'s');
 set(s,'markeredgecolor','k')
 ```
-![50x50 random matrix](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/50x50_rand.svg)
+![50x50 random real matrix](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/50x50_rand.svg)
+
+### 100x100 random matrix (complex)
+![100x100 random complex matrix](https://github.com/dezanche/Hinton_plot/blob/main/Output_examples/100x100_rand.svg)
 
 ### Correlation absolute value
 
